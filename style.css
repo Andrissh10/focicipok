@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  padding: 2rem;
+}
+
+.shoe-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.shoe {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.shoe:hover {
+  transform: scale(1.05);
+}
+
+.shoe img {
+  width: 150px; /* Fix szélesség */
+  height: 150px; /* Fix magasság */
+  object-fit: cover; /* Vágja le az arányokat, hogy illeszkedjen */
+  border-radius: 5px; /* Lekerekített sarkok */
+}
+
+.hidden {
+  display: none;
+}
+
+#details {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 2rem;
+}

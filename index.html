@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focicipők</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Focicipők Világa</h1>
+        <p>Találd meg a tökéletes cipőt a játékodhoz!</p>
+    </header>
+    <main>
+        <section class="shoe-list">
+            <h2>Top focicipők</h2>
+            <div class="shoe" onclick="showDetails('Adidas Predator')">
+                <img src="https://th.bing.com/th/id/OIP.nWc2V3DZEVQ2ziXxPE_6PgHaFq?w=247&h=189&c=7&r=0&o=5&pid=1.7" alt="Adidas Predator">
+                <h3>Adidas Predator</h3>
+                <p>Ár: 25 000 Ft</p>
+            </div>
+            <div class="shoe" onclick="showDetails('Nike Mercurial')">
+                <img src="https://www.futbolemotion.com/imagesarticulos/176456/grandes/bota-nike-air-zoom-mercurial-superfly-9-elite-cr7-fg-blanco-0.jpg" alt="Nike Mercurial">
+                <h3>Nike Mercurial</h3>
+                <p>Ár: 28 000 Ft</p>
+            </div>
+            <div class="shoe" onclick="showDetails('Puma Future')">
+                <img src="https://th.bing.com/th/id/OIP.TkRAWoVFMfu55yHBSgLetgHaHa?rs=1&pid=ImgDetMain" alt="Puma Future">
+                <h3>Puma Future</h3>
+                <p>Ár: 22 000 Ft</p>
+            </div>
+        </section>
+        <section id="details" class="hidden">
+            <h2 id="shoe-name">Részletek</h2>
+            <p>Válassz egy focicipőt a részletek megtekintéséhez!</p>
+            <button onclick="hideDetails()">Bezárás</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Focicipők Világa</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
